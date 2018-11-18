@@ -1,0 +1,13 @@
+<!doctype html>
+
+<div id="tweets"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('/');
+    var tweets = document.getElementById('tweets');
+    var tweetsLocation = window.location.href.split("/")
+  socket.on(JSON.stringify(tweetsLocation[3] + '-' + tweetsLocation[4]), function (data) {
+    tweets.innerHTML = tweets.innerHTML + '<br>' + data;
+  });
+</script>

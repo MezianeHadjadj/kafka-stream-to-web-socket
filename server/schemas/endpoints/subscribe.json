@@ -1,0 +1,19 @@
+{
+
+    "id" : "/subscribe",
+
+    "type" : "object",
+
+    "properties" : {
+
+
+        "lat" : {
+            "type" : "float",
+            "required" : true
+        },
+        "lon" : {
+            "type" : "float",
+            "required" : true
+        }
+    }
+}

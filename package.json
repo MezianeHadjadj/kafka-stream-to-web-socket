@@ -1,0 +1,35 @@
+{
+  "author": "Meziane Hadjadj",
+  "dependencies": {
+    "express": "^4.15.3",
+    "bluebird": "^3.4.6",
+    "body-parser": "1.15.2",
+    "bunyan": "^1.8.1",
+    "jsonschema": "^1.1.0",
+    "lodash": "^4.16.4",
+    "socket.io": "2.0.3",
+    "node-rdkafka": "2.0.0",
+    "dotenv": "2.0.0",
+    "require-dir": "0.3.2",
+    "twit" : "2.2.9",
+    "gps-util": "1.0.1"
+  },
+  "description": "Stream tweets by location with a delay",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
+    "chai": "^4.1.2"
+
+  },
+  "license": "ISC",
+  "main": "server/index.js",
+  "name": "coding-test-here",
+  "scripts": {
+    "eslint": "eslint . && mocha --opts test/mocha.opts",
+    "test": "npm run eslint",
+    "start": "nodemon server/index.js"
+  },
+  "version": "1.0.0"
+}
